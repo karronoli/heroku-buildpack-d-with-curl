@@ -95,9 +95,6 @@ if [ -f dub-postbuild ]; then
     ./dub-postbuild "$BUILD_DIR" "$CACHE_DIR" | indent
 fi
 
-ls -l $BUILD_DIR/ehlod
-cp $BUILD_DIR/ehlod /tmp
-
 # clean up any remaining sources
 rm -rf "$TOOL_DIR" source src views
 
