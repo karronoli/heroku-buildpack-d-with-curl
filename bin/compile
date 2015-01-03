@@ -95,6 +95,8 @@ if [ -f dub-postbuild ]; then
     ./dub-postbuild "$BUILD_DIR" "$CACHE_DIR" | indent
 fi
 
+find $BUILD_DIR
+
 # clean up any remaining sources
 rm -rf "$TOOL_DIR" source src views
 
