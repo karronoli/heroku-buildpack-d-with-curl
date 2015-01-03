@@ -53,6 +53,10 @@ cd $TOOL_DIR
 # expand dub
 git clone https://github.com/pussinboots/dub
 cd dub
+
+echo "Files prior to performing build:"
+find .
+
 ./build.sh | indent
 cd ..
 export PATH=$PATH:/$TOOL_DIR/dub/bin/
