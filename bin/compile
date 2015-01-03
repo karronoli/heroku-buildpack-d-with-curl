@@ -55,7 +55,11 @@ git clone https://github.com/pussinboots/dub
 cd dub
 
 echo "Files prior to performing build:"
-find .
+echo "- Build:"
+find $BUILD_DIR
+echo "- Cached:"
+find $CACHE_DIR
+echo "---"
 
 ./build.sh | indent
 cd ..
