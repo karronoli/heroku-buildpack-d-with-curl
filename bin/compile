@@ -15,8 +15,8 @@ TOOL_DIR=$BUILD_DIR/toolchain
 ARCHIVE_DIR=$CACHE_DIR/archives
 mkdir -p "$TOOL_DIR" "$ARCHIVE_DIR"
 
-DMD_ARCHIVE_PATH=http://downloads.dlang.org/releases/2013
-DMD_ARCHIVE=dmd.2.066.0
+DMD_ARCHIVE_PATH=http://downloads.dlang.org/releases/2014
+DMD_ARCHIVE=dmd.2.066.1
 DUB_ARCHIVE_PATH=http://code.dlang.org/files
 DUB_ARCHIVE=dub-0.9.22-linux-x86_64
 
@@ -56,7 +56,7 @@ cd $TOOL_DIR
 7za x $ARCHIVE_DIR/$DMD_ARCHIVE.zip > /dev/null
 
 # expand dub
-git clone https://github.com/pussinboots/dub
+git clone https://github.com/D-Programming-Language/dub
 cd dub
 
 echo "Path prior to performing build:"
