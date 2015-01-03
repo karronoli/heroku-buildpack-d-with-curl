@@ -54,6 +54,8 @@ cd $TOOL_DIR
 git clone https://github.com/pussinboots/dub
 cd dub
 
+echo "Path prior to performing build:"
+echo $PATH
 echo "Files prior to performing build:"
 echo "- Build:"
 find $BUILD_DIR
